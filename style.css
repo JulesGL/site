@@ -53,7 +53,7 @@ a:hover {
     border: 2px solid #3498db;
     transition: transform 0.3s;
     width: 50px; 
-    height: auto;
+    height: 50px;
 }
 
 .logo:hover {
