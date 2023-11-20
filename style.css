@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
     color: #333;
     margin: 0;
@@ -13,13 +13,21 @@ header {
     padding: 20px;
 }
 
-h1 {
-    margin: 0;
+.retro-font {
+    font-family: 'Bungee Shade', cursive;
     font-size: 2em;
+    margin: 0;
+}
+
+.elegant-font {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 section {
     margin: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -40,13 +48,13 @@ a:hover {
     color: #2980b9;
 }
 
-a img {
+.logo {
     border-radius: 50%;
     border: 2px solid #3498db;
     transition: transform 0.3s;
 }
 
-a:hover img {
+.logo:hover {
     transform: scale(1.1);
 }
 
