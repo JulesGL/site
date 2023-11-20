@@ -67,3 +67,24 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.cta-email {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-email:hover {
+    background-color: #2980b9;
+}
+
+
+.retro-font {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    margin: 0;
+}
