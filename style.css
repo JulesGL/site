@@ -52,6 +52,8 @@ a:hover {
     border-radius: 50%;
     border: 2px solid #3498db;
     transition: transform 0.3s;
+    width: 50px; 
+    height: auto;
 }
 
 .logo:hover {
