@@ -44,8 +44,6 @@ a:hover {
 }
 
 .logo {
-    border-radius: 50%;
-    border: 2px solid #e0a87f; /* Couleur crème pour le bord des logos */
     transition: transform 0.3s, border-color 0.3s;
     width: 80px;
     height: 80px;
