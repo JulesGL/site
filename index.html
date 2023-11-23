@@ -5,6 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="icon_fav.png" type="image/png">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,40 +15,57 @@
     </head>
 
     <body>
-        <header>
-            <h1 class="retro-font">Jules Gomel</h1>
+        <section class="profile-section">
             <img src="tete.jpg" alt="Ma tête" class="profile-image">
-            <p class="retro-font">Welcome to my place</p>
-        </header>
+            <div class="header-content">
+                <h1 class="retro-font">Jules Gomel</h1>
+            </div>
+        </section>
         
 
         <section id="about-me">
-            <h2 class="retro-font">About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eu elit vestibulum sodales. Fusce ultrices congue ullamcorper.</p>
+            <p>Final year French student in ISAE-Supaero MSc, focused on signal processing and cognitive sciences.</p>
+            <p>Working hard to kicksart a Ph.D journey in 2024, on Brain-Computer Interface</p>
+            <p>Highly motivated to broaden my expertise across various domains</p>
+            
+            <div class="interest-logo">
+                <i class="fas fa-brain fa-2x" data-tooltip="Neuroengineering : cognitive sciences and BCI"></i>
+            </div>
+
+            <div class="interest-logo">
+                <i class="fa-solid fa-code fa-2x" data-tooltip="Coding : Python, Matlab and curious..."></i>
+            </div>
+
+            <div class="interest-logo">
+                <i class="fa-solid fa-book fa-2x" data-tooltip="Reading : litterature, fiction and philosophy"></i>
+            </div>
+
+            <div class="interest-logo">
+                <i class="fa-solid fa-music fa-2x" data-tooltip="Music : guitar and listening"></i>
+            </div>
+        
+            <div class="interest-logo">
+                <i class="fa-solid fa-person-running fa-2x" data-tooltip="Sport : running, badminton and swimming"></i>
+            </div>
+        
+            
         </section>
 
-        <section id="interests">
-            <h2 class="retro-font">Center of Interests</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eu elit vestibulum sodales. Fusce ultrices congue ullamcorper.</p>
-        </section>
+        
 
-        <section>
-            <h2 class="retro-font">Contact</h2>
-            <p>For any question or collaboration, feel free to contact me:</p>
-            <a href="mailto:julesgomel.pro@gmail.com" class="cta-email">
-                <i class="fas fa-envelope"></i> Contact by Email
-            </a>
-        </section>
 
-        <section>
-            <a class="logo" href="https://www.linkedin.com/in/julesgomel/" target="_blank">
-                <i class="fa-brands fa-linkedin fa-2xl"></i>
+        <section class="social-logos">
+            <a class="logo link-icon" href="mailto:julesgomel.pro@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
             </a>
-            <a class="logo" href="https://github.com/JulesGL" target="_blank">
-                <i class="fa-brands fa-github fa-2xl"></i>
+            <a class="logo link-icon" href="https://www.linkedin.com/in/julesgomel/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
             </a>
-            <a class="logo" href="CV.pdf" download="CV_Jules_GOMEL.pdf">
-                <i class="fa-solid fa-file fa-2xl"></i>
+            <a class="logo link-icon" href="https://github.com/JulesGL" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="logo link-icon" href="CV.pdf" download="CV_Jules_GOMEL.pdf">
+                <i class="fa-solid fa-file"></i>
             </a>
         </section>
 

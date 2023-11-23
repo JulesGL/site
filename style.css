@@ -1,36 +1,35 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Crème clair */
+    font-family: 'Lora', sans-serif;
     color: #333;
+    background-color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #e0a87f; /* Crème foncé pour le header */
+    background-color: #e0a87f;
     color: #fff;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .retro-font {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 2em;
     margin: 0;
 }
 
 section {
-    margin: 30px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff; /* Fond blanc pour les sections */
-    border-radius: 10px; /* Coins arrondis */
+    background-color: #fff;
     padding: 20px;
 }
 
 h2 {
-    color: #e0a87f; /* Couleur crème pour les titres de section */
+    color: #e0a87f;
 }
 
 p {
@@ -40,57 +39,33 @@ p {
 a,
 a:hover {
     text-decoration: none;
-    color: #e0a87f; /* Couleur crème pour les liens */
+    color: #e0a87f;
 }
 
 .logo {
     transition: transform 0.3s, border-color 0.3s;
     width: 80px;
     height: 80px;
-    margin: 0 15px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
 }
 
 .logo:hover {
     transform: scale(1.1);
-    border-color: #d0835f; /* Couleur crème plus foncée sur hover */
+    border-color: #d0835f;
 }
-
 
 .bottom-section {
-    background-color: #e0a87f; /* Crème foncé pour la section du bas de page */
+    background-color: #e0a87f;
     color: #fff;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Ajustez la marge selon vos besoins */
-}
-
-.cta-email {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #e0a87f; /* Crème foncé pour le bouton */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-bottom: 15px;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.cta-email:hover {
-    background-color: #d0835f; /* Couleur crème plus foncée sur hover */
+    margin-top: 0; /* Pour coller au bas de la page */
 }
 
 #about-me,
 #interests {
     text-align: center;
-    margin: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff; /* Fond blanc pour les sections */
-    border-radius: 10px; /* Coins arrondis */
+    background-color: #fff;
     padding: 20px;
 }
 
@@ -102,17 +77,68 @@ a:hover {
 }
 
 .profile-section {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    background-color: #e0a87f;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 20px 0; /* Ajustez la marge selon vos préférences */
+    margin: 0;
 }
 
 .profile-image {
-    width: 150px; /* Ajustez la taille selon vos préférences */
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.interest-logo {
+    position: relative;
+    display: inline-block;
+    color: #e0a87f; /* Couleur des logos */
+    margin:20px;
+}
+
+.interest-logo i::after {
+    font-family: 'Lora', sans-serif;
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #e0a87f;
+    color: #333; /* Couleur du texte du tooltip */
+    padding: 10px;
+    border-radius: 3px;
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 14px; /* Taille de la police du tooltip */
+    text-transform: none; /* Aucune transformation en majuscules */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom:10px;
+}
+
+.interest-logo:hover i::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 0; /* Ajustez selon vos besoins */
+}
+
+.logo.link-icon {
+    display: inline-block;
+    width: 40px; /* Largeur de l'icône */
+    height: 40px; /* Hauteur de l'icône */
+    font-size: 1.5em; /* Taille de l'icône */
+    text-align: center; /* Pour centrer l'icône dans le conteneur */
+    line-height: 40px; /* Pour centrer l'icône verticalement */
 }
