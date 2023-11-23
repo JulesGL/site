@@ -49,8 +49,8 @@ a:hover {
 }
 
 .logo {
-    border-radius: 50%;
-    border: 2px solid #3498db;
+    border-radius: 0%;
+    border: none solid #3498db;
     transition: transform 0.3s;
     width: 50px; 
     height: 50px;
