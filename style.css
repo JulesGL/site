@@ -102,11 +102,16 @@ footer {
     margin-bottom: 20px;
 }
 
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .profile-image {
     width: 150px; /* Ajustez la taille selon vos préférences */
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 20px;
+    margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
