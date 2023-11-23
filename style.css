@@ -57,15 +57,14 @@ a:hover {
     border-color: #d0835f; /* Couleur crème plus foncée sur hover */
 }
 
-footer {
-    background-color: #e0a87f; /* Crème foncé pour le footer */
+
+.bottom-section {
+    background-color: #e0a87f; /* Crème foncé pour la section du bas de page */
     color: #fff;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     text-align: center;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Ajustez la marge selon vos besoins */
 }
 
 .cta-email {
