@@ -1,18 +1,17 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f5f5f5; /* Crème clair */
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #8a8a8a; /* Gray header background */
+    background-color: #e0a87f; /* Crème foncé pour le header */
     color: #fff;
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, #3498db, #2980b9);
 }
 
 .retro-font {
@@ -25,10 +24,13 @@ section {
     margin: 30px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Fond blanc pour les sections */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px;
 }
 
 h2 {
-    color: #8a8a8a; /* Gray heading color */
+    color: #e0a87f; /* Couleur crème pour les titres de section */
 }
 
 p {
@@ -38,12 +40,12 @@ p {
 a,
 a:hover {
     text-decoration: none;
-    color: #8a8a8a; /* Gray link color */
+    color: #e0a87f; /* Couleur crème pour les liens */
 }
 
 .logo {
     border-radius: 50%;
-    border: 2px solid #8a8a8a; /* Gray border for the logo */
+    border: 2px solid #e0a87f; /* Couleur crème pour le bord des logos */
     transition: transform 0.3s, border-color 0.3s;
     width: 80px;
     height: 80px;
@@ -54,23 +56,24 @@ a:hover {
 
 .logo:hover {
     transform: scale(1.1);
-    border-color: #666; /* Darker gray border on hover */
+    border-color: #d0835f; /* Couleur crème plus foncée sur hover */
 }
 
 footer {
-    background-color: #8a8a8a; /* Gray footer background */
+    background-color: #e0a87f; /* Crème foncé pour le footer */
     color: #fff;
     padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-email {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #8a8a8a; /* Gray button background */
+    background-color: #e0a87f; /* Crème foncé pour le bouton */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -81,5 +84,5 @@ footer {
 }
 
 .cta-email:hover {
-    background-color: #666; /* Darker gray button background on hover */
+    background-color: #d0835f; /* Couleur crème plus foncée sur hover */
 }
