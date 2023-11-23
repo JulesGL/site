@@ -14,16 +14,11 @@ header {
 }
 
 .retro-font {
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Roboto Slab', serif;
     font-size: 2em;
     margin: 0;
 }
 
-.elegant-font {
-    font-family: 'Lobster', cursive;
-    margin: 0;
-    font-size: 1.5em;
-}
 
 section {
     margin: 20px;
@@ -54,6 +49,8 @@ a:hover {
     transition: transform 0.3s;
     width: 50px; 
     height: 50px;
+    margin: 0 10px;
+    margin-bottom: 10px;
 }
 
 .logo:hover {
@@ -78,6 +75,7 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
 .cta-email:hover {
@@ -85,41 +83,6 @@ footer {
 }
 
 
-.retro-font {
-    font-family: 'Roboto Slab', serif;
-    font-size: 2em;
-    margin: 0;
-}
 
-section {
-    margin: 20px;
-    text-align: center;
-}
 
-.cta-email {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-bottom: 10px; /* Ajoutez une marge en bas pour l'espace */
-}
 
-.cta-email:hover {
-    background-color: #2980b9;
-}
-
-.logo {
-    border-radius: 50%;
-    border: 2px solid #3498db;
-    transition: transform 0.3s;
-    width: 50px;
-    height: 50px;
-    margin: 0 10px; /* Ajoutez une marge à droite et à gauche pour l'espace entre les boutons */
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
