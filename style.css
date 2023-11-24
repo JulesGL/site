@@ -59,7 +59,7 @@ a:hover {
     color: #fff;
     padding: 5px;
     text-align: center;
-    margin-top: 0; /* Pour coller au bas de la page */
+    margin-top: 0; 
 }
 
 #about-me,
@@ -98,7 +98,7 @@ a:hover {
 .interest-logo {
     position: relative;
     display: inline-block;
-    color: #e0a87f; /* Couleur des logos */
+    color: #e0a87f;
     margin:20px;
 }
 
@@ -112,12 +112,12 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     background-color: #e0a87f;
-    color: #333; /* Couleur du texte du tooltip */
+    color: #333; 
     padding: 10px;
     border-radius: 3px;
     transition: opacity 0.3s, visibility 0.3s;
-    font-size: 14px; /* Taille de la police du tooltip */
-    text-transform: none; /* Aucune transformation en majuscules */
+    font-size: 14px;
+    text-transform: none; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom:10px;
 }
@@ -131,14 +131,15 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-top: auto;
-    margin-bottom: 0; /* Ajustez selon vos besoins */
+    margin-bottom: 0; 
+    align-items: center;
 }
 
 .logo.link-icon {
     display: inline-block;
-    width: 40px; /* Largeur de l'icône */
-    height: 40px; /* Hauteur de l'icône */
-    font-size: 1.5em; /* Taille de l'icône */
-    text-align: center; /* Pour centrer l'icône dans le conteneur */
-    line-height: 40px; /* Pour centrer l'icône verticalement */
+    width: 40px; 
+    height: 40px; 
+    font-size: 1.5em;
+    text-align: center; 
+    line-height: 40px; 
 }
