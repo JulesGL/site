@@ -36,10 +36,13 @@ p {
     line-height: 1.5;
 }
 
-a,
-a:hover {
+a {
     text-decoration: none;
     color: #e0a87f;
+}
+
+a:hover {
+    color: #d0835f;
 }
 
 .logo {
@@ -59,7 +62,7 @@ a:hover {
     color: #fff;
     padding: 5px;
     text-align: center;
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 #about-me,
@@ -99,7 +102,7 @@ a:hover {
     position: relative;
     display: inline-block;
     color: #e0a87f;
-    margin:20px;
+    margin: 20px;
 }
 
 .interest-logo i::after {
@@ -112,14 +115,14 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     background-color: #e0a87f;
-    color: #333; 
+    color: #333;
     padding: 10px;
     border-radius: 3px;
     transition: opacity 0.3s, visibility 0.3s;
     font-size: 14px;
-    text-transform: none; 
+    text-transform: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .interest-logo:hover i::after {
@@ -131,15 +134,16 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-top: auto;
-    margin-bottom: 0; 
+    margin-bottom: 0;
     align-items: center;
 }
 
 .logo.link-icon {
     display: inline-block;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     font-size: 1.5em;
-    text-align: center; 
-    line-height: 40px; 
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
 }
