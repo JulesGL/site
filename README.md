@@ -1,3 +1,3 @@
-# site
+# Portfolio Website
 
-Bonjour ceci est mon site web livré à vous
+This repository contains the source code for my personal portfolio website.
