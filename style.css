@@ -36,16 +36,12 @@ p {
     line-height: 1.5;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
     color: #e0a87f;
 }
 
-a:hover {
-    color: #d0835f;
-}
-
-.logo {
+.logo, .logo:hover {
     transition: transform 0.3s, border-color 0.3s;
     width: 80px;
     height: 80px;
@@ -57,26 +53,18 @@ a:hover {
     border-color: #d0835f;
 }
 
-.bottom-section {
+.bottom-section, .social-logos {
     background-color: #e0a87f;
     color: #fff;
-    padding: 5px;
     text-align: center;
     margin-top: 0;
+    padding: 5px;
 }
 
-#about-me,
-#interests {
+#about-me, #interests {
     text-align: center;
     background-color: #fff;
     padding: 20px;
-}
-
-.profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .profile-section {
