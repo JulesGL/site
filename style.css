@@ -1,7 +1,13 @@
+:root {
+    --main-bg-color: #fff;
+    --main-text-color: #333;
+    --accent-color: #e0a87f;
+}
+
 body {
     font-family: 'Lora', sans-serif;
-    color: #333;
-    background-color: #fff;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,11 +16,13 @@ body {
 }
 
 header {
-    background-color: #e0a87f;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
+
 
 .retro-font {
     font-family: 'Lora', sans-serif;
@@ -22,14 +30,19 @@ header {
     margin: 0;
 }
 
+footer{
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
 section {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
     padding: 20px;
 }
 
 h2 {
-    color: #e0a87f;
+    color: var(--accent-color);
 }
 
 p {
@@ -38,7 +51,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #e0a87f;
+    color: var(--accent-color);
 }
 
 a:hover {
@@ -58,8 +71,8 @@ a:hover {
 }
 
 .bottom-section {
-    background-color: #e0a87f;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
     padding: 5px;
     text-align: center;
     margin-top: 0;
@@ -68,7 +81,7 @@ a:hover {
 #about-me,
 #interests {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
     padding: 20px;
 }
 
@@ -82,8 +95,8 @@ a:hover {
 .profile-section {
     text-align: center;
     padding: 20px;
-    color: #333;
-    background-color: #e0a87f;
+    color: var(--main-text-color);
+    background-color: var(--accent-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +114,7 @@ a:hover {
 .interest-logo {
     position: relative;
     display: inline-block;
-    color: #e0a87f;
+    color: var(--accent-color);
     margin: 20px;
 }
 
@@ -114,8 +127,8 @@ a:hover {
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
-    background-color: #e0a87f;
-    color: #333;
+    background-color: var(--accent-color);
+    color: var(--main-text-color);
     padding: 10px;
     border-radius: 3px;
     transition: opacity 0.3s, visibility 0.3s;
