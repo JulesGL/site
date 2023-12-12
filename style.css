@@ -191,3 +191,33 @@ cite {
     font-size: 1em;
     color: var(--main-text-color); 
 }
+
+#playlist {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.playlist-track {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.playlist-track img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.playlist-track div {
+    flex: 1;
+}
+
+#playlist-tracks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
