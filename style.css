@@ -191,3 +191,7 @@ cite {
     font-size: 1em;
     color: var(--main-text-color); 
 }
+
+.book-section-title {
+    display: none; /* Masque les titres par défaut */
+}
