@@ -2,69 +2,80 @@
 <html lang="en">
 
 <head>
+    <!-- Vos balises meta, liens vers des styles, etc. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon_fav.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/f980ba732e.js" crossorigin="anonymous"></script>
-    <title>Jules Gomel - Music</title>
+    <title>Page Neuroengineering - Jules Gomel</title>
+    <script src="article.js"></script>
 </head>
 
 <body>
     <header>
-        <!-- Votre entête si nécessaire -->
+        <!-- En-tête du site -->
     </header>
 
+    <header>
+        <section class="profile-section">
+            <div class="header-content">
+                <h1 class="retro-font">My work in Neuroengineering</h1>
+            </div>
+        </section>
+    </header>
+
+
     <main>
+        <section id="neuroengineering">
 
-        <header>
-            <section class="profile-section">
-                <div class="header-content">
-                    <h1 class="retro-font">My musical interests</h1>
-                </div>
+            <!-- Section "Mes travaux actuels" -->
+            <section id="current-projects">
+                <h3>My current projects</h3>
+                <p>Currently finishing my MSc at ISAE-Supaero.</p>
+                <p>Planned to make my final year internship at Neuroergonomics lab at Supaero starting March 2024.</p>
+                <p>Studying to prepare my Ph.D, expected to start in October 2024.</p>
+                <!-- Ajoutez des détails sur vos projets actuels selon votre besoin -->
             </section>
-        </header>
 
-        <section id="music-interests">
-            <!-- Ajoutez ici les informations musicales qui vous intéressent -->
-            <p>Passionate about diverse music, regularly immersing in genres. </p>
-            <p>During work, find solace in classical compositions, film scores, and video game soundtracks.</p>
-            <p>This is my main playlist for studying and reading :</p>
+            <!-- Section "Revue d'articles" -->
+            <section id="article-reviews" class="hidden-section">
+                <h3>Article Reviews</h3>
+                <p>Discover some interesting articles on neuroscience that I have recently reviewed:</p>
+
+                <!-- Exemple d'article avec un lien et une preview -->
+                <div id="article-container"></div>
+
+                <!-- Ajoutez d'autres articles de manière similaire -->
+            </section>
         </section>
-
-        <section id="playlist">
-            <!-- Ajoutez ici le code pour afficher votre playlist Spotify -->
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6swfzZjS5ghwn5Xpd1QQKL?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
-        </section>
-
-        
-
-
     </main>
 
     <footer>
 
-        <section id="quote">
+        <section id="quote" class="hidden-section">
             <blockquote>
-                <p>"After silence, that which comes nearest to expressing the inexpressible is music."</p>
-                <cite> - Aldous Huxley</cite>
+                <p>"Les livres sont des amis froids et sûrs."</p>
+                <cite> - Victor Hugo</cite>
             </blockquote>
         </section>
 
         <section>
+
+
             <p>My other pages</p>
 
             <a href="index.html">
-                <div class="interest-logo">
-                    <i class="fas fa-arrow-left fa-2x" data-tooltip="Back to home page" aria-label="Back to menu arrow"></i>
-                </div>
+            <div class="interest-logo">
+                <i class="fas fa-arrow-left fa-2x" data-tooltip="Back to home page" aria-label="Back to menu arrow"></i>
+            </div>
             </a>
-
+            
             <a href="neuro.html">
-                    <div class="interest-logo">
-                        <i class="fas fa-brain fa-2x" data-tooltip="Neuroengineering : cognition, signals, BCI" aria-label="Interest in Neuroengineering"></i>
-                    </div>
+            <div class="interest-logo">
+                <i class="fas fa-brain fa-2x" data-tooltip="Neuroengineering : cognition, signals, BCI" aria-label="Interest in Neuroengineering"></i>
+            </div>
             </a>
 
             <div class="interest-logo">
@@ -103,11 +114,10 @@
             </a>
         </section>
 
-
-        <section class="bottom-section">
-            <p>&copy; 2023 Jules Gomel</p>
-        </section>
-    </footer>
+    <section class="bottom-section">
+        <p>&copy; 2023 Jules Gomel</p>
+    </section>
+</footer>
 </body>
 
 </html>

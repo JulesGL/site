@@ -195,3 +195,7 @@ cite {
 .book-section-title {
     display: none; /* Masque les titres par défaut */
 }
+
+.hidden-section {
+    display: none; /* Masque les sections par défaut */
+}
