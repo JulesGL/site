@@ -15,6 +15,15 @@
 <body>
 
     <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="neuro.html"><i class="fas fa-brain"></i> My research</a></li>
+                <li><a href="games.html"><i class="fas fa-chess-board"></i> Hobbies</a></li>
+                <li><a href="books.html"><i class="fas fa-book"></i> Books</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
+            </ul>
+        </nav>
         <section class="profile-section">
             <div class="header-content">
                 <h1 class="retro-font">My work in Neuroengineering</h1>
@@ -23,62 +32,99 @@
         <img src="assets/img/MATB.jpeg" class="image">
     </header>
 
-
     <main>
-        <section id="neuroengineering">
+        <section id="game-interests">
+            <section id="interests">
+                <h2>My research interests</h2>
+                <p>I'm dedicated to research in Neuroengineering because I really enjoy applying my engineering skills to solve problems for patients.</p>
+                <p>I'm really interested in Brain-Computer Interfaces for rehabilitation, neurofeedback and diagnosis.</p>
+                <p>If you're interested in these topics, let's keep in touch !</p>
+            </section>
+
+            <section id="skills">
+                <h2>My technical skills</h2>
+                <p>I have strong coding in Python skills, after various projects for classes and internship. I also worked a lot with Matlab for Signal Processing. Feel free to check my <a href="https://github.com/JulesGL">GitHub</a> profile.</p>
+                <p>I also have a good knowledge of Machine Learning and Deep Learning, and I'm currently learning about BCI and EEG signal processing.</p>
+                <p>Finally, I'm also learning about UX/UI design as I've developed several user applications during projects and internships and web development to be able to enhance my website.</p>
+                <p>You can learn more about my projects and skills by looking at my <a href="CV.pdf">CV</a> !</p>
+            </section>
 
             <section id="current-projects">
-                <h3>My current projects</h3>
+                <h2>My Current Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <img src="assets/img/starburst.png" alt="Starburst" class="project-image">
+                        <div class="project-details">
+                            <h4 class="project-title">Development for Starburst BCI</h4>
+                            <p class="project-description">Working on the BCI developed in Frederic Dehais' lab by adding multiple features to study its performance and enhance its robustness.</p>
+                            <a href="https://www.researchgate.net/publication/375513192_Burst_c-VEP_Based_BCI_Optimizing_stimulus_design_for_enhanced_classification_with_minimal_calibration_data_and_improved_user_experience" class="project-link">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/img/bci.jpg" alt="BCI1" class="project-image">
+                        <div class="project-details">
+                            <h4 class="project-title">Studying the state-of-the-art in BCI</h4>
+                            <p class="project-description">I'm studying intensively the state-of-the-art of BCI and EEG to get a better and broader understanding of these research topics.</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/img/timeflux.png" alt="Timeflux development" class="project-image">
+                        <div class="project-details">
+                            <h4 class="project-title">Development for Timeflux Package</h4>
+                            <p class="project-description">Adding features to Timeflux package during my internship at ISAE-Supaero</p>
+                            <a href="https://github.com/timeflux/timeflux" class="project-link">Learn more</a>
+                        </div>
+                    </div>
+                    
+                </div>
             </section>
 
-            <section id="article-reviews" class="hidden-section">
-                <h3>Article Reviews</h3>
-                <p>Discover some interesting articles on neuroscience that I have recently reviewed:</p>
-
-                <div id="article-container"></div>
-
+            <section id="current-projects">
+                <h2>My most relevant achieved projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <img src="assets/img/frontend.png" alt="EEG-Stroke App" class="project-image">
+                        <div class="project-details">
+                            <h4 class="project-title">EEG-Stroke (2024)</h4>
+                            <p class="project-description">For the last year of engineering school project, we developed in team an intention of movement classification algorithm and a computer application to classify the intention of motion.</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/img/neuroday.png" alt="Neuroday" class="project-image">
+                        <div class="project-details">
+                            <h4 class="project-title">Neuroday (2024)</h4>
+                            <p class="project-description">I was a speaker at the student conferences on Neurosciences "Neuroday" organized by Benjamin Delteil, to speak about BCI and the research at ISAE-Supaero.</p>
+                            <a href="https://www.instagram.com/neurodaytoulouse/" class="project-link">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/img/fnirs.png" alt="fNIRS data" class="project-image">
+                        <div class="project-details">
+                            <h4 class="project-title">fNIRS artifacts of motion (2023)</h4>
+                            <p class="project-description">During my internship at Dr Hasan Ayaz, I have developed a Generative Adversial Network model to generate fNIRS data and compared it to other stats model. The article writing is in progress.</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="assets/img/imu.jpg" alt="IMU project" class="project-image">
+                        <div class="project-details">
+                            <h4 class="project-title">IMU upper-limb motion tracking (2022)</h4>
+                            <p class="project-description">Developed an algorithm in Matlab for upper-limb motion tracking, for post-stroke patient diagnosis.</p>
+                            <a href="https://www.mdpi.com/1424-8220/23/17/7427" class="project-link">Link to the paper I'm acknowledged in.</a>
+                        </div>
+                    </div>
+                </div>
             </section>
+
         </section>
     </main>
 
     <footer>
-
         <section id="quote" class="hidden-section">
             <blockquote>
-                <p>"Les livres sont des amis froids et sûrs."</p>
-                <cite> - Victor Hugo</cite>
+                <p>Neuro ergo sum.</p>
             </blockquote>
         </section>
 
-        <section>
-
-
-            <p>My other pages</p>
-
-            <a href="index.html">
-            <div class="interest-logo">
-                <i class="fas fa-arrow-left fa-2x" data-tooltip="Back to home page" aria-label="Back to menu arrow"></i>
-            </div>
-            </a>
-
-            <a href="games.html">
-            <div class="interest-logo">
-                <i class="fas fa-chess-board fa-2x" data-tooltip="Board games : playing and animating events" aria-label="Interest in board games"></i>
-            </div>
-        </a>
-
-            <a href="books.html">
-                <div class="interest-logo">
-                    <i class="fas fa-book fa-2x" data-tooltip="Reading : Litterature, Fantasy and SciFi" aria-label="Interest in Reading"></i>
-                </div>
-            </a>
-
-            <a href="music.html">
-                <div class="interest-logo">
-                    <i class="fas fa-music fa-2x" data-tooltip="Music : Guitar and Listening" aria-label="Interest in Music"></i>
-                </div>
-            </a>
-        </section>
 
         <section class="social-logos">
             <a class="logo link-icon" href="https://github.com/JulesGL" target="_blank" alt="GitHub">
@@ -95,10 +141,10 @@
             </a>
         </section>
 
-    <section class="bottom-section">
-        <p>&copy; 2024 Jules Gomel</p>
-    </section>
-</footer>
+        <section class="bottom-section">
+            <p>&copy; 2024 Jules Gomel</p>
+        </section>
+    </footer>
 </body>
 
 </html>

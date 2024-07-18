@@ -2,19 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/img/icon_fav.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/f980ba732e.js" crossorigin="anonymous"></script>
     <title>Jules Gomel - Books</title>
-    <script src="category.js"></script>
 </head>
 
 <body>
     <!-- En-tête -->
     <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="neuro.html"><i class="fas fa-brain"></i> My research</a></li>
+                <li><a href="games.html"><i class="fas fa-chess-board"></i> Hobbies</a></li>
+                <li><a href="books.html"><i class="fas fa-book"></i> Books</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
+            </ul>
+        </nav>
         <section class="profile-section">
             <div class="header-content">
                 <h1 class="retro-font">My litterature interests</h1>
@@ -25,31 +33,40 @@
 
     <!-- Contenu principal -->
     <main>
-        <section>
-            <label for="book-category">Choose a books category :</label>
-        <select id="book-category">
-            <option value="current">Books I'm still reading</option>
-            <option value="read">Books I've read</option>
-            <option value="to-read">Books to be read</option>
-        </select>
+        <section id="books-interests">
+            <p>I've always enjoyed spending time reading.</p>
+            <p>I particularly enjoy fantasy, science-fiction and mystery books.</p>
+        <section id="bookshelf">
+            <div id="current-books" class="book-section">
+                <h2>Books I'm reading</h2>
+                <div class="bookshelf-container">
+                    <div class="book-item">
+                        <img src="assets/img/witcher3.jpg" alt="Book Cover" class="book-cover">
+                        <div class="book-title">The Witcher Tome 3</div>
+                        <div class="book-author">Andrzej Sapkowski</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="to-read-books" class="book-section">
+                <h2>Books backlog</h2>
+                <div class="bookshelf-container">
+                    <div class="book-item">
+                        <img src="assets/img/leaves.jpg" alt="Book Cover" class="book-cover">
+                        <div class="book-title">The House of Leaves</div>
+                        <div class="book-author">Mark Z. Danielewski</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="read-books" class="book-section">
+                <h2>Books I've read</h2>
+                <div class="bookshelf-container">
+                    <!-- Add book items here -->
+                </div>
+            </div>
         </section>
-                
-        <section id="current-books" class="book-section">
-            <h2 class="book-section-title" id="current-books-title">Books I'm still reading</h2>
-        </section>
-
-        
-        <section id="read-books" class="book-section">
-            <h2 class="book-section-title" id="read-books-title">Books I've read</h2>
-        </section>
-
-        <section id="to-read-books" class="book-section">
-            <h2 class="book-section-title" id="to-read-books-title">Books to be read</h2>
-        </section>
-
-
-
-        
+    </section>
     </main>
 
     
@@ -63,37 +80,6 @@
                     <p>"Les livres sont des amis froids et sûrs."</p>
                     <cite> - Victor Hugo</cite>
                 </blockquote>
-            </section>
-
-            <section>
-
-
-                <p>My other pages</p>
-
-                <a href="index.html">
-                <div class="interest-logo">
-                    <i class="fas fa-arrow-left fa-2x" data-tooltip="Back to home page" aria-label="Back to menu arrow"></i>
-                </div>
-                </a>
-
-                <a href="neuro.html">
-                    <div class="interest-logo">
-                        <i class="fas fa-brain fa-2x" data-tooltip="Research in neuroengineering" aria-label="Interest in Neuroengineering"></i>
-                    </div>
-                </a>
-
-                <a href="games.html">
-                <div class="interest-logo">
-                    <i class="fas fa-chess-board fa-2x" data-tooltip="Board games : playing and animating events" aria-label="Interest in board games"></i>
-                </div>
-            </a>
-
-                <a href="music.html">
-                    <div class="interest-logo">
-                        <i class="fas fa-music fa-2x" data-tooltip="Music : Guitar and Listening" aria-label="Interest in Music"></i>
-                    </div>
-                </a>
-
             </section>
 
             <section class="social-logos">
