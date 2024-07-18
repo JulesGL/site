@@ -23,6 +23,34 @@ header {
     margin: 0;
 }
 
+.navbar {
+    background: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
 
 .retro-font {
     font-family: 'Lora', sans-serif;
@@ -30,7 +58,12 @@ header {
     margin: 0;
 }
 
-footer{
+.tagline {
+    font-size: 1.2em;
+    color: #666;
+}
+
+footer {
     margin-top: auto;
     margin-bottom: 0;
 }
@@ -112,42 +145,19 @@ a:hover {
 }
 
 .image {
-    width: 25%;
-    height: 25%;
-    margin: 10px 0;
+    max-width: 25%;
+    height: auto;
+    display: block; 
+    margin: 10px auto; 
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
-.interest-logo {
-    position: relative;
-    display: inline-block;
-    color: var(--accent-color);
-    margin: 20px;
+.image:hover {
+    filter: brightness(110%);
+    transition: filter 0.3s ease-in-out;
 }
 
-.interest-logo i::after {
-    font-family: 'Lora', sans-serif;
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    visibility: hidden;
-    background-color: var(--accent-color);
-    color: var(--main-text-color);
-    padding: 10px;
-    border-radius: 3px;
-    transition: opacity 0.3s, visibility 0.3s;
-    font-size: 14px;
-    text-transform: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
-
-.interest-logo:hover i::after {
-    opacity: 1;
-    visibility: visible;
-}
 
 .social-logos {
     display: flex;
@@ -205,6 +215,7 @@ cite {
 .hidden-section {
     display: none; /* Masque les sections par défaut */
 }
+
 #current-projects {
     text-align: center;
 }
@@ -248,7 +259,7 @@ cite {
 
 .project-title {
     margin: 0 0 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #333;
 }
 
@@ -266,4 +277,89 @@ cite {
 
 .project-link:hover {
     text-decoration: underline;
+}
+
+.navbar {
+    background: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* Book section styles */
+.book-section {
+    margin: 20px 0;
+    padding: 20px; /* Added padding for clarity */
+    background-color: #f9f9f9; /* Added background color for clarity */
+}
+
+.book-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.bookshelf-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    width: 150px;
+    text-align: center;
+}
+
+.book-cover {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+}
+
+.book-title {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.book-author {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
 }
