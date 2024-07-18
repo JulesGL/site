@@ -30,12 +30,15 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: flex;
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center align items horizontally */
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -47,6 +50,7 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    display: block;
 }
 
 .nav-list a:hover {
