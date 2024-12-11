@@ -2,6 +2,25 @@
     --main-bg-color: #fff;
     --main-text-color: #333;
     --accent-color: #e0a87f;
+    --hover-color: #d0835f;
+    --light-gray: #f9f9f9;
+    --link-color:  #a35d2b;
+    --link-hover-color: #a35d2bb7; 
+    font-size: 1.2em;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('assets/fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('assets/fonts/Lora-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 body {
@@ -15,65 +34,46 @@ body {
     min-height: 100vh;
 }
 
-header {
+header, .bottom-section {
     background-color: var(--accent-color);
     color: var(--main-bg-color);
     text-align: center;
     padding: 20px;
-    margin: 0;
 }
 
 .navbar {
     background: #333;
-    padding: 10px 0px;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: flex; /* Use flexbox */
-    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-    justify-content: center; /* Center align items horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.nav-list li {
-    margin: 0 15px;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-list a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .nav-list a:hover {
     text-decoration: underline;
 }
 
-.retro-font {
-    font-family: 'Lora', sans-serif;
-    font-size: 2em;
-    margin: 0;
-}
-
-.tagline {
-    font-size: 1.2em;
-    color: #666;
-}
-
-footer {
-    margin-top: auto;
-    margin-bottom: 0;
-}
-
-section {
+section, #about-me, #interests {
     text-align: center;
     background-color: var(--main-bg-color);
     padding: 20px;
@@ -89,41 +89,48 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--link-color);
 }
 
 a:hover {
-    color: #d0835f;
+    color: var(--link-hover-color);
 }
 
 .logo {
-    transition: transform 0.3s, border-color 0.3s;
     width: 80px;
     height: 80px;
     margin-right: 15px;
+    transition: transform 0.3s, border-color 0.3s;
 }
 
 .logo:hover {
     transform: scale(1.1);
-    border-color: #d0835f;
+    border-color: var(--hover-color);
 }
 
-.bottom-section {
-    background-color: var(--accent-color);
-    color: var(--main-bg-color);
-    padding: 5px;
-    text-align: center;
-    margin-top: 0;
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 0;
+    transition: filter 0.3s ease-in-out;
 }
 
-#about-me,
-#interests {
-    text-align: center;
-    background-color: var(--main-bg-color);
-    padding: 20px;
+.profile-image:hover, .image:hover {
+    filter: brightness(110%);
 }
 
-.profile-container {
+.image {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-container, .social-logos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,91 +145,18 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+blockquote, cite {
+    font-family: 'Lora', sans-serif;
+    font-size: 1em;
     margin: 0;
-}
-
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 10px 0;
-}
-
-.image {
-    max-width: 25%;
-    height: auto;
-    display: block; 
-    margin: 10px auto; 
-    border-radius: 10px; 
-    overflow: hidden; 
-}
-
-.image:hover {
-    filter: brightness(110%);
-    transition: filter 0.3s ease-in-out;
-}
-
-
-.social-logos {
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-    margin-bottom: 0;
-    align-items: center;
-}
-
-.logo.link-icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5em;
-    text-align: center;
-    line-height: 40px;
-    margin-right: 10px;
-}
-
-.profile-image:hover {
-    filter: brightness(110%);
-    transition: filter 0.3s ease-in-out;
-}
-
-.interest-logo i:hover {
-    color: #d0835f; 
-    transition: color 0.3s ease-in-out;
-}
-
-#quote {
-    background-color: var(--main-bg-color);
     color: var(--main-text-color);
-    padding: 20px;
-    text-align: center;
 }
 
 blockquote {
-    font-family: 'Lora', sans-serif; 
-    font-size: 0.8em;
-    margin: 0;
-    color: var(--main-text-color); 
-}
-
-cite {
-    display: block;
-    margin-top: 10px;
-    font-size: 1em;
-    color: var(--main-text-color); 
-}
-
-.book-section-title {
-    display: none; /* Masque les titres par défaut */
-}
-
-.hidden-section {
-    display: none; /* Masque les sections par défaut */
-}
-
-#current-projects {
     text-align: center;
+    padding: 20px;
 }
 
 .project-list {
@@ -240,7 +174,7 @@ cite {
     align-items: center;
     width: 100%;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: var(--light-gray);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -265,7 +199,7 @@ cite {
 .project-title {
     margin: 0 0 10px;
     font-size: 1.2em;
-    color: #333;
+    color: var(--main-text-color);
 }
 
 .project-description {
@@ -284,44 +218,10 @@ cite {
     text-decoration: underline;
 }
 
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-list li {
-    margin: 0;
-}
-
-.nav-list a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.nav-list a:hover {
-    text-decoration: underline;
-}
-
-/* Book section styles */
 .book-section {
     margin: 20px 0;
-    padding: 20px; /* Added padding for clarity */
-    background-color: #f9f9f9; /* Added background color for clarity */
-}
-
-.book-section h2 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--light-gray);
 }
 
 .bookshelf-container {
@@ -352,7 +252,7 @@ cite {
 .book-title {
     margin-top: 10px;
     font-size: 1em;
-    color: #333;
+    color: var(--main-text-color);
 }
 
 .book-author {
