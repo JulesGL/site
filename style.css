@@ -41,6 +41,7 @@ header, .bottom-section {
     padding: 20px;
 }
 
+/* Default navbar style */
 .navbar {
     background: #333;
     padding: 10px 0;
@@ -50,6 +51,7 @@ header, .bottom-section {
     z-index: 1000;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-list {
@@ -72,6 +74,46 @@ header, .bottom-section {
 .nav-list a:hover {
     text-decoration: underline;
 }
+
+.navbar .menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .nav-list.open {
+        display: block;
+    }
+    
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        color: white;
+        font-size: 24px;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 section, #about-me, #interests {
     text-align: center;

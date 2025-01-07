@@ -17,12 +17,13 @@
 
     <header>
         <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-list">
                 <li><a href="index.html"><i class="fas fa-user"></i> About Me</a></li>
                 <li><a href="neuro.html"><i class="fas fa-brain"></i> Research</a></li>
                 <li><a href="games.html"><i class="fas fa-chess-board"></i> Hobbies</a></li>
-                <li><a href="books.html"><i class="fas fa-book"></i> Books</a></li>
-                <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
                 <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
             </ul>
         </nav>
@@ -37,86 +38,95 @@
     <main>
         <section id="game-interests">
             <section id="interests">
-                <h2>My research interests</h2>
-                <p>I'm dedicated to research in Neuroengineering because I really enjoy applying my engineering skills to solve problems for patients.</p>
-                <p>I'm really interested in Brain-Computer Interfaces for rehabilitation, neurofeedback and diagnosis.</p>
-                <p>If you're interested in these topics, let's keep in touch !</p>
+                <h2>My Research Interests</h2>
+                <p>I am passionate about applying my engineering skills to solving real-world challenges in Neuroengineering. My focus is on Brain-Computer Interfaces (BCIs), specifically in the areas of rehabilitation, neurofeedback, and diagnostic applications.</p>
+                <p>In particular, I am studying neuromarkers of visual information integration for BCI applications, contributing to the development of more effective and user-friendly neurotechnologies. I am eager to push the boundaries of human-computer interaction through my research in neuroengineering and signal processing.</p>
+                <p>If you're interested in these topics, let's connect!</p>
             </section>
 
             <section id="skills">
-                <h2>My technical skills</h2>
-                <p>I have strong <b>coding skills</b> in Python, after various projects for classes and internship. I also worked a lot with Matlab for Signal Processing and an internship on motion tracking with inertial measurement units. Feel free to check my <a href="https://github.com/JulesGL">GitHub</a> profile.</p>
-                <p>I also have a good knowledge of <b>Machine Learning</b> and Deep Learning, and I'm currently learning about <b>BCI and EEG signal processing</b>.</p>
-                <p>Finally, I'm also learning about UX/UI design as I've developed several user applications during projects and internships and web development to be able to enhance my website. I'm taking a class on Coursera on that topic!</p>
-                <p>You can learn more about my projects and skills by looking at my <a href="CV.pdf">CV</a> !</p>
+                <h2>My Technical Skills</h2>
+                <p>I have strong coding skills in <b>Python</b>, gained through various academic projects and internships. Additionally, I have experience using <b>Matlab</b> for signal processing and motion tracking with Inertial Measurement Units (IMUs). Check out my <a href="https://github.com/JulesGL">GitHub</a> profile for more details.</p>
+                <p>My expertise extends to <b>Machine Learning</b>, with a focus on deep learning techniques. I am actively working to deepen my knowledge of <b>BCI</b> and <b>EEG signal processing</b> through my ongoing PhD research.</p>
+                <p>In addition, I am expanding my skills in <b>UX/UI design</b> and <b>web development</b>, with a special interest in improving user experience in neurotechnology applications. I am currently taking a <a href="https://www.coursera.org/courses?query=ux%20design">Coursera course</a> to further enhance these skills.</p>
+                <p>You can learn more about my projects and skills by checking my <a href="CV.pdf">CV</a>!</p>
             </section>
 
             <section id="current-projects">
                 <h2>My Current Projects</h2>
                 <div class="project-list">
+                    <!-- PhD Research on Neuromarkers -->
                     <div class="project-item">
                         <img src="assets/img/starburst.webp" alt="Jules Gomel Starburst" class="project-image" loading="lazy">
                         <div class="project-details">
-                            <h4 class="project-title">PhD </h4>
-                            <p class="project-description">We are exploring the effect of diff</p>
+                            <h4 class="project-title">PhD Research: Neuromarkers of Visual Information Integration for BCI</h4>
+                            <p class="project-description">I am investigating EEG neuromarkers associated with visual information integration, focusing on improving Brain-Computer Interfaces (BCIs) for rehabilitation and neurofeedback applications.</p>
                             <a href="https://www.researchgate.net/publication/375513192_Burst_c-VEP_Based_BCI_Optimizing_stimulus_design_for_enhanced_classification_with_minimal_calibration_data_and_improved_user_experience" class="project-link">Learn more</a>
                         </div>
                     </div>
+                    <!-- Starburst BCI Feedback Experiment -->
                     <div class="project-item">
-                        <img src="assets/img/starburst.webp" alt="Jules Gomel Starburst" class="project-image" loading="lazy">
+                        <img src="assets/img/starburst.webp" alt="Jules Gomel Starburst Experiment" class="project-image" loading="lazy">
                         <div class="project-details">
-                            <h4 class="project-title">Experiment preparation with Starburst BCI</h4>
-                            <p class="project-description">We are exploring the effect  </p>
+                            <h4 class="project-title">Experiment on Feedback and Starburst Reactive BCI</h4>
+                            <p class="project-description">I am conducting an experiment to evaluate the effect of real-time feedback on user performance in Starburst reactive BCIs, an exciting frontier in enhancing BCI usability and user experience.</p>
                             <a href="https://www.researchgate.net/publication/375513192_Burst_c-VEP_Based_BCI_Optimizing_stimulus_design_for_enhanced_classification_with_minimal_calibration_data_and_improved_user_experience" class="project-link">Learn more</a>
                         </div>
                     </div>
+                    <!-- Teaching Assistant Role -->
                     <div class="project-item">
-                        <img src="assets/img/equations.webp" alt="Jules Gomel Particular teacher" class="project-image" loading="lazy">
+                        <img src="assets/img/equations.webp" alt="Jules Gomel Teacher Assistant" class="project-image" loading="lazy">
                         <div class="project-details">
-                            <h4 class="project-title">Teacher assistant and particular teacher</h4>
-                            <p class="project-description"> I will be assisting teacher for practical classes in neuroengineering at ISAE-Supaero. Also teaching Maths, Physics, Engineering science and Computer science to a student in preparatory classes and a student in high school.</p>
+                            <h4 class="project-title">Teaching Assistant and Private Tutor</h4>
+                            <p class="project-description">I am assisting in practical classes for neuroengineering at ISAE-Supaero and teaching mathematics, physics, and computer science to students in preparatory classes and high school.</p>
                         </div>
                     </div>
                 </div>
             </section>
+            
 
-            <section id="current-projects">
-                <h2>My most relevant achieved projects</h2>
+            <section id="achieved-projects">
+                <h2>My Most Relevant Achieved Projects</h2>
                 <div class="project-list">
+                    <!-- Starburst BCI Development -->
                     <div class="project-item">
-                        <img src="assets/img/starburst.webp" alt="Jules Gomel EEG-Stroke App" class="project-image" loading="lazy">
+                        <img src="assets/img/starburst.webp" alt="Starburst BCI Development" class="project-image" loading="lazy">
                         <div class="project-details">
-                            <h4 class="project-title">Development of a robust reactive BCI (2024)</h4>
-                            <p class="project-description">For my master thesis at ISAE-Supaero, I worked on developping features for Starburst BCI such as visualization, performance evaluation and gating.</p>
+                            <h4 class="project-title">Development of a Robust Reactive BCI (2024)</h4>
+                            <p class="project-description">During my master's thesis at ISAE-Supaero, I developed features for the Starburst BCI, such as real-time performance evaluation and visualization tools, aimed at enhancing user experience.</p>
                         </div>
                     </div>
+                    <!-- EEG-Stroke Classification -->
                     <div class="project-item">
-                        <img src="assets/img/frontend.webp" alt="Jules Gomel EEG-Stroke App" class="project-image" loading="lazy">
+                        <img src="assets/img/frontend.webp" alt="EEG-Stroke Project" class="project-image" loading="lazy">
                         <div class="project-details">
                             <h4 class="project-title">EEG-Stroke (2024)</h4>
-                            <p class="project-description">For the last year of engineering school project, we developed in team an intention of movement classification algorithm and a computer application to classify the intention of motion.</p>
+                            <p class="project-description">I worked on developing an intention of movement classification algorithm using EEG data, helping stroke patients regain control over their motor functions. The project also included the development of a user-friendly application for real-time classification.</p>
                         </div>
                     </div>
+                    <!-- Neuroday Conference Speaker -->
                     <div class="project-item">
-                        <img src="assets/img/neuroday.webp" alt="Jules Gomel Neuroday" class="project-image" loading="lazy">
+                        <img src="assets/img/neuroday.webp" alt="Neuroday Conference" class="project-image" loading="lazy">
                         <div class="project-details">
-                            <h4 class="project-title">Neuroday (2024)</h4>
-                            <p class="project-description">I was a speaker at the student conferences on Neurosciences "Neuroday" organized by Benjamin Delteil, to speak about BCI and the research at ISAE-Supaero.</p>
+                            <h4 class="project-title">Speaker at Neuroday Conference (2024)</h4>
+                            <p class="project-description">I presented on Brain-Computer Interfaces and the latest research at ISAE-Supaero during the annual "Neuroday" conference, which brought together experts in neuroscience and BCI technology.</p>
                             <a href="https://www.instagram.com/neurodaytoulouse/" class="project-link">Learn more</a>
                         </div>
                     </div>
+                    <!-- fNIRS Artifacts Research -->
                     <div class="project-item">
-                        <img src="assets/img/fnirs.webp" alt="Jules Gomel fNIRS data" class="project-image" loading="lazy">
+                        <img src="assets/img/fnirs.webp" alt="fNIRS Artifacts Research" class="project-image" loading="lazy">
                         <div class="project-details">
-                            <h4 class="project-title">fNIRS artifacts of motion (2023)</h4>
-                            <p class="project-description">During my internship at Dr Hasan Ayaz, I have developed a Generative Adversial Network model to generate fNIRS data and compared it to other stats model. The article writing is in progress.</p>
+                            <h4 class="project-title">fNIRS Artifacts of Motion (2023)</h4>
+                            <p class="project-description">During my internship with Dr. Hasan Ayaz, I developed a Generative Adversarial Network (GAN) to model and recover missing fNIRS data, demonstrating its potential over traditional methods. The article is currently in progress.</p>
                         </div>
                     </div>
+                    <!-- IMU Motion Tracking Research -->
                     <div class="project-item">
-                        <img src="assets/img/imu.webp" alt="Jules Gomel IMU project" class="project-image" loading="lazy">
+                        <img src="assets/img/imu.webp" alt="IMU Upper-limb Motion Tracking" class="project-image" loading="lazy">
                         <div class="project-details">
-                            <h4 class="project-title">IMU upper-limb motion tracking (2022)</h4>
-                            <p class="project-description">Developed an algorithm in Matlab for upper-limb motion tracking, for post-stroke patient diagnosis.</p>
+                            <h4 class="project-title">IMU Upper-limb Motion Tracking (2022)</h4>
+                            <p class="project-description">Developed an algorithm in Matlab to track upper-limb motion for post-stroke rehabilitation diagnostics. This project was published in a scientific journal.</p>
                             <a href="https://www.mdpi.com/1424-8220/23/17/7427" class="project-link">Link to the paper I'm acknowledged in.</a>
                         </div>
                     </div>
@@ -150,7 +160,7 @@
         </section>
 
         <section class="bottom-section">
-            <p>&copy; 2024 - Jules Gomel</p>
+            <p>&copy; 2025 - Jules Gomel</p>
         </section>
     </footer>
 </body>
