@@ -3,3 +3,8 @@ document.querySelectorAll('.nav-list a').forEach(link => {
         link.classList.add('active');
     }
 });
+
+function toggleMenu() {
+    const menu = document.querySelector('.nav-list');
+    menu.classList.toggle('open');
+}
