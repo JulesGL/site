@@ -158,7 +158,7 @@ h3 {
 }
 
 p {
-    margin: 0 0 10px;
+    margin: 0 20%;
 }
 
 /* Links */
@@ -220,6 +220,7 @@ a:hover {
 .project-description {
     font-size: 1em;
     color: #666;
+    margin:0;
 }
 
 .project-link {
