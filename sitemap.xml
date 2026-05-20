@@ -4,39 +4,48 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
+<!-- Page d'accueil -->
 <url>
   <loc>https://julesgl.github.io/site/</loc>
-  <lastmod>2025-01-07T11:07:57+00:00</lastmod>
+  <lastmod>2026-05-20T10:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://julesgl.github.io/site/index.html</loc>
-  <lastmod>2025-01-07T11:07:57+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-05-20T10:00:00+00:00</lastmod>
+  <priority>0.90</priority>
 </url>
+
+<!-- Pages principales -->
 <url>
   <loc>https://julesgl.github.io/site/neuro.html</loc>
-  <lastmod>2025-01-07T11:07:57+00:00</lastmod>
+  <lastmod>2026-05-20T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://julesgl.github.io/site/games.html</loc>
-  <lastmod>2025-01-07T11:07:57+00:00</lastmod>
+  <lastmod>2026-05-20T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://julesgl.github.io/site/blog.html</loc>
-  <lastmod>2025-01-07T11:07:57+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://julesgl.github.io/site/CV.pdf</loc>
-  <lastmod>2025-01-07T11:07:57+00:00</lastmod>
+  <lastmod>2026-05-20T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
+<!-- Articles de blog -->
+<url>
+  <loc>https://julesgl.github.io/site/posts/chess-and-cognitive-load.html</loc>
+  <lastmod>2026-05-20T10:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
+<!-- Documents -->
+<url>
+  <loc>https://julesgl.github.io/site/CV.pdf</loc>
+  <lastmod>2026-05-20T10:00:00+00:00</lastmod>
+  <priority>0.60</priority>
+</url>
 
 </urlset>

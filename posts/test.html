@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An exploration of chess through the lens of neuroscience and cognitive load, by neuro-engineer Jules Gomel.">
+    <!-- Remonter d'un dossier car ce fichier sera dans le dossier posts/ -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../assets/img/icon_fav.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/f980ba732e.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/active.js"></script>
+    <title>Chess and Cognitive Load | Jules Gomel Blog</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- Attention aux liens : on ajoute ../ pour revenir à la racine -->
+            <ul class="nav-list">
+                <li><a href="../index.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="../neuro.html"><i class="fas fa-brain"></i> Research</a></li>
+                <li><a href="../games.html"><i class="fas fa-chess-board"></i> Hobbies</a></li>
+                <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+            </ul>
+        </nav>
+        <section class="profile-section">
+            <div class="header-content">
+                <h1 class="retro-font">The Blog</h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="single-post-container">
+        <article class="single-post">
+            
+            <header class="post-header">
+                <h1 class="post-title">Chess and the Brain: Managing Cognitive Load Under Pressure</h1>
+                <div class="post-meta">
+                    <p>Published on May 20, 2026 • Tags: <span class="tag">Chess</span>, <span class="tag">Neuroscience</span>, <span class="tag">Cognitive Load</span></p>
+                </div>
+                
+                <!-- Attention au "../" crucial ici pour remonter au dossier principal -->
+                <img src="../assets/img/chess-hero.webp" alt="Focus on chess board" class="post-hero-image" loading="lazy">
+            </header>
+
+            <!-- Corps de l'article -->
+            <!-- Corps de l'article -->
+            <div class="post-body">
+                <p>Welcome to this first exploration of the intersection between one of the world's oldest strategy games and modern neuroscience. As a neuro-engineer, I spend a lot of time analyzing how the brain processes visual information. When I play chess, I realize I am essentially running a real-time cognitive experiment on myself.</p>
+
+                <h2>The Visual Pattern Recognition</h2>
+                <!-- Remarque l'ajout de la balise <sup> avec l'ancre vers #ref-1 -->
+                <p>Grandmasters don't necessarily calculate more moves ahead than amateurs; they recognize patterns. Studies using eye-tracking and EEG have shown that experienced players process the board in "chunks" <sup><a href="#ref-1" id="cite-1">[1]</a></sup>. This allows them to bypass the working memory bottleneck.</p>
+
+                <blockquote>
+                    "Chess is a gymnasium of the mind, but it's also a perfect model for studying human-computer interaction and visual entrainment."
+                </blockquote>
+
+                <h2>Time Trouble and Stress</h2>
+                <p>What happens when the clock ticks down? The cognitive load spikes. In my PhD research, I study neuromarkers of visual integration. Applying this lens to blitz chess reveals fascinating insights into how the brain prioritizes rapid decision-making over deep analytical processing <sup><a href="#ref-2" id="cite-2">[2]</a></sup>.</p>
+                
+                <ul>
+                    <li><strong>Peripheral Vision:</strong> How players anticipate threats outside their direct foveal focus.</li>
+                    <li><strong>Decision Fatigue:</strong> The drop in accuracy after a long, grueling endgame.</li>
+                </ul>
+
+                <p>In upcoming posts, we will dive deeper into specific EEG studies on chess players and see what they can teach us about designing better Brain-Computer Interfaces (BCI).</p>
+                
+                <!-- SECTION RÉFÉRENCES -->
+                <hr class="references-separator">
+                <section class="references-section">
+                    <h3>References</h3>
+                    <ol class="references-list">
+                        <!-- Référence 1 -->
+                        <li id="ref-1">
+                            Chase, W. G., & Simon, H. A. (1973). Perception in chess. <em>Cognitive psychology</em>, 4(1), 55-81. 
+                            <a href="https://doi.org/10.1016/0010-0285(73)90004-2" target="_blank" rel="noopener noreferrer">DOI</a> 
+                            <a href="#cite-1" class="back-to-text" aria-label="Back to text">↵</a>
+                        </li>
+                        <!-- Référence 2 -->
+                        <li id="ref-2">
+                            Leone, C., et al. (2012). The neural correlates of chess playing. <em>Neuroscience letters</em>. 
+                            <a href="#cite-2" class="back-to-text" aria-label="Back to text">↵</a>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+
+            <!-- Bouton de retour -->
+            <div class="post-footer">
+                <a href="../blog.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to all articles</a>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <section id="quote">
+            <blockquote>
+                <p>Neuro ergo sum.</p>
+            </blockquote>
+        </section>
+
+        <section class="social-logos">
+            <a class="logo link-icon" href="https://github.com/JulesGL" target="_blank" aria-label="GitHub of Jules Gomel">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="logo link-icon" href="mailto:jules.gomel@isae-supaero.fr" target="_blank" aria-label="Email of Jules Gomel">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a class="logo link-icon" href="https://www.linkedin.com/in/julesgomel/" target="_blank" aria-label="LinkedIn of Jules Gomel">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="logo link-icon" href="../CV.pdf" download="CV_Jules_GOMEL.pdf" aria-label="Resume of Jules Gomel">
+                <i class="fas fa-file"></i>
+            </a>
+            <a class="logo link-icon" href="https://websites.isae-supaero.fr/cne/" target="_blank" aria-label="Jules Gomel Lab Site">
+                <i class="fas fa-brain"></i>
+            </a>
+        </section>
+
+        <section class="bottom-section">
+            <p>&copy; 2026 - Jules Gomel</p>
+        </section>
+    </footer>
+</body>
+
+</html>
